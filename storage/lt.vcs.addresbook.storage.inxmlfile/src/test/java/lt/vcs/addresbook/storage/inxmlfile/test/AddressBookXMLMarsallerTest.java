@@ -34,6 +34,7 @@ public class AddressBookXMLMarsallerTest {
 		
 		addresBook.getAddreses().add(addres);
 		
+		XmlAddresBook.class.getAnnotations();
 		JAXBContext context = JAXBContext.newInstance(XmlAddresBook.class);
         Marshaller m = context.createMarshaller();
         m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

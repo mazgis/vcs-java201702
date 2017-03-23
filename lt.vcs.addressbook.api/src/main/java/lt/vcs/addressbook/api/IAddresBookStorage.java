@@ -1,13 +1,13 @@
 package lt.vcs.addressbook.api;
 
-import java.util.List;
+import java.util.Collection;
 
 public interface IAddresBookStorage {
 	public void save(IAddresEntry entry);
 
-	public List<IAddresEntry> getAllEntries();
+	public Collection<IAddresEntry> getAllEntries();
 
-	public List<IAddresEntry> findEntriesByName(String name);
+	public Collection<IAddresEntry> findEntriesByName(String name);
 
-	public List<IAddresEntry> findEntriesByEmail(String email);
+	public Collection<IAddresEntry> findEntriesByEmail(String email);
 }
