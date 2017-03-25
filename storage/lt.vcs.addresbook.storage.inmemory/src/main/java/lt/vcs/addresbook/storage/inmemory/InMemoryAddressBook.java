@@ -20,10 +20,10 @@ public class InMemoryAddressBook implements IAddresBookStorage {
 		}
 	};
 	
-	private List<IAddresEntry> list = new ArrayList<>();
+	protected List<IAddresEntry> list = new ArrayList<>();
 
 	@Override
-	public void save(IAddresEntry entry) {
+	public void save(IAddresEntry entry) throws Exception{
 		int newId = getIncrementedId();
 		entry.setId(newId);
 		list.add(entry);
@@ -51,6 +51,7 @@ public class InMemoryAddressBook implements IAddresBookStorage {
 		//Cia panaudotos annonymous class 
 		//placiau apie tai https://docs.oracle.com/javase/tutorial/java/javaOO/anonymousclasses.html
 		//jeigu kils klausimu ar naiškumų rašykite per slack arba būtinai klausikte kai susitiksime
+		
 		return CollectionUtils.select(list, new Predicate<IAddresEntry>() {
 			@Override
 			public boolean evaluate(IAddresEntry address) {

@@ -12,6 +12,7 @@
 		<module>lt.vcs.addresbook.storage.inmemory</module>
 		<module>lt.vcs.addresbook.storage.inxmlfile</module>
 		<module>lt.vcs.addresbook.storage.indbutils</module>
+		<module>lt.vcs.addressbook.storage.persistence</module>
 	</modules>
 
 	<dependencies>
