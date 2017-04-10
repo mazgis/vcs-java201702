@@ -31,7 +31,6 @@ public class AddressBookXMLMarsallerTest {
 		addres.setMobilePhone("2221112");
 		addres.setEmail("2email");
 		addres.setId(2);
-		
 		addresBook.getAddreses().add(addres);
 		
 		XmlAddresBook.class.getAnnotations();
